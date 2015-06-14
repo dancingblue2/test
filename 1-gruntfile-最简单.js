@@ -19,6 +19,11 @@ module.exports=function (grunt){
 			main: {}
 		}
 	});
+	
+	window.onload=function ()
+	{
+		alert('ABC');
+	};
 
 	//3.注册默认任务
 	grunt.registerTask('default', ['uglify']);
