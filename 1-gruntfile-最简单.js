@@ -5,7 +5,7 @@ module.exports=function (grunt){
 	//1.加载插件
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 
-	//2.配置信息
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.initConfig({
 		//任务名
 		uglify: {
@@ -14,6 +14,8 @@ module.exports=function (grunt){
 				src: 'js/jsonp.js',
 				dest: 'jsonp2.js'
 			}
+		},
+		cssmin: {
 		}
 	});
 
