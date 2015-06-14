@@ -4,8 +4,8 @@
 module.exports=function (grunt){
 	//1.加载插件
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+
 	grunt.initConfig({
 		//任务名
 		uglify: {
@@ -16,6 +16,7 @@ module.exports=function (grunt){
 			}
 		},
 		cssmin: {
+			main: {}
 		}
 	});
 
